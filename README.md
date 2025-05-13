@@ -7,7 +7,7 @@
 
 - Created - 2025
 
-- Technologies Used - Html , css , js ,
+- Technologies Used - Html , css , js , react , next.js
 
 - Role - Frontend
 
