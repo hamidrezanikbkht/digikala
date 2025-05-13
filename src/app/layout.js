@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import Hedearorg from "./components/hedear/hedearorg";
+import Foother from "./components/foother/foother";
+import { ContextProvider } from "./components/context/context";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -18,11 +20,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" dir="rtl">
+      <head></head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-screen-2xl  mx-auto py-44 bg-[#333333]   `}
+        
       >
-        {children}
+       <ContextProvider>
+         <Hedearorg/>
+          {children}
+          <Foother />
+          </ContextProvider>
       </body>
     </html>
   );

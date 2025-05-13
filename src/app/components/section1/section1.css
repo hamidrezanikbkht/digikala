@@ -1,0 +1,45 @@
+#app {
+  height: 100%;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+.swiper-container-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 400px; /* باید با h-[400px] در JSX هماهنگ باشه */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
