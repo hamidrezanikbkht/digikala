@@ -107,7 +107,7 @@ useEffect(() => {
           );
         })}
        <Link href="/about" onClick={() => setmenu(false)}> <div className="flex flex-wrap w-full px-5 py-3 hover:bg-white bg-red-300 dark:bg-gray-800/60 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 mb-4 border  backdrop-blur-sm">درباره ما </div></Link>
-       <Link href="/help" onClick={() => setmenu(false)}> <div className="flex flex-wrap w-full px-5 py-3 hover:bg-white bg-red-300 dark:bg-gray-800/60 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 mb-4 border  backdrop-blur-sm">سوالی دارید ؟</div></Link>
+       <Link href="/help" onClick={() => setmenu(false)}> <div className="flex flex-wrap w-full px-5 py-3 hover:bg-white bg-red-300 dark:bg-gray-800/60 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 mb-4 border  backdrop-blur-sm">سوالی  دارید ؟</div></Link>
       </div>
     </div>
   );
