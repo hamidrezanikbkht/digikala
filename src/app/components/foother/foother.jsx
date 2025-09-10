@@ -3,7 +3,7 @@ import React from "react";
 export default function Foother() {
   return (
     <div
-      className="w-full flex flex-wrap py-10 bg-[#333333] max-w-screen-2xl mx-auto text-white *:text-white "
+      className="w-full flex flex-wrap py-10 bg-[#333333] max-w-screen-2xl mx-auto text-white *:text-white  "
       
     >
       <div className="w-full flex justify-center px-5">

@@ -12,6 +12,12 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+const hamid = Geist_Mono({
+  variable: "--font-iran",
+  subsets: ['latin'], // ← این خط خیلی مهمه
+  preload: true,     
+  display: 'swap',
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -23,14 +29,13 @@ export default function RootLayout({ children }) {
     <html lang="en" dir="rtl">
       <head></head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-screen-2xl  mx-auto py-44 bg-[#333333]   `}
-        
+        className={`${geistSans.variable} ${geistMono.variable} ${hamid.variable} antialiased **:font-iran max-w-screen-2xl  mx-auto py-44 bg-[#333333]   `}
       >
-       <ContextProvider>
-         <Hedearorg/>
+        <ContextProvider>
+          <Hedearorg />
           {children}
           <Foother />
-          </ContextProvider>
+        </ContextProvider>
       </body>
     </html>
   );
